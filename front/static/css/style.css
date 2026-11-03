@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pantalla {
+    display: none;
+}
+
+.pantalla.activa {
+    display: flex;
+}
+
+.oculto {
+    display: none !important;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-amplia {
+    width: 680px !important;
+}
+
+.test-layout {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.video-box img {
+    width: 360px;
+    height: 270px;
+    border-radius: 10px;
+    background: #000;
+}
+
+.panel-vivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid #cbd5e1;
+    border-radius: 12px;
+    min-width: 170px;
+    transition: border-color 0.3s;
+}
+
+.emoji-mediano { font-size: 60px; }
+.emoji-grande { font-size: 80px; display: block; margin-bottom: 10px; }
+.emocion-viva-texto { font-weight: 600; margin: 10px 0; }
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: #cbd5e1;
+    color: #1e293b;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-primary:hover { background: #1d4ed8; }
+.btn-secondary:hover { background: #94a3b8; }
