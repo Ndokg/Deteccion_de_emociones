@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #00b4ff, #ffe600, #ff2a2a, #00b4ff);
+    background-size: 300% 300%;
+    animation: fondo 20s ease infinite;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pantalla {
+    display: none;
+}
+
+.pantalla.activa {
+    display: flex;
+}
+
+.oculto {
+    display: none !important;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-amplia {
+    width: 680px !important;
+}
+
+.test-layout {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.video-box img {
+    width: 360px;
+    height: 270px;
+    border-radius: 10px;
+    background: #000;
+}
+
+.panel-vivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid #cbd5e1;
+    border-radius: 12px;
+    min-width: 170px;
+    transition: border-color 0.3s;
+}
+
+.emoji-mediano { font-size: 60px; }
+.emoji-grande { font-size: 80px; display: block; margin-bottom: 10px; }
+.emocion-viva-texto { font-weight: 600; margin: 10px 0; }
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #00e5ff, #ff00ff, #00e5ff);
+    background-size: 200% 100%;
+    animation: color-boton 4s linear infinite;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-secondary {
+    background: linear-gradient(90deg, #ffe600, #ff2a2a, #ffe600);
+    background-size: 200% 100%;
+    animation: color-boton 4s linear infinite;
+    color: #1e293b;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover, .btn-secondary:hover { transform: scale(1.08); }
+.btn-primary:active, .btn-secondary:active { transform: scale(0.95); }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; animation: none; }
+
+/* Animaciones */
+@keyframes fondo {
+    50% { background-position: 100% 50%; }
+}
+
+@keyframes color-boton {
+    to { background-position: -200% 0; }
+}
+
+/* Emojis de la pantalla de inicio, flotando */
+.emojis {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.emojis span {
+    animation: flotar 3s ease-in-out infinite;
+}
+.emojis span:nth-child(2) { animation-delay: 0.4s; }
+.emojis span:nth-child(3) { animation-delay: 0.8s; }
+.emojis span:nth-child(4) { animation-delay: 1.2s; }
+
+@keyframes flotar {
+    50% { transform: translateY(-14px); }
+}
