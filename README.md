@@ -1,10 +1,10 @@
-# 🧠 Backend - Sistema de Reconocimiento y Detección de Emociones
+#  Backend - Sistema de Reconocimiento y Detección de Emociones
 
 Este repositorio contiene la arquitectura de backend y visión artificial desarrollada en **Python** utilizando **OpenCV** y **FastAPI**. El módulo gestiona la recolección de muestras faciales, el entrenamiento de modelos de clasificación y la inferencia de emociones en tiempo real mediante transmisión de video y WebSockets.
 
 ---
 
-## 📂 Estructura del Repositorio
+##  Estructura del Repositorio
 
 - **`Data/`**: Conjunto de datos con imágenes faciales clasificadas en subcarpetas por emoción (*Enojo*, *Felicidad*, *Sorpresa*, *Tristeza*).
 - **`Emojis/`**: Recursos gráficos complementarios.
@@ -18,7 +18,7 @@ Este repositorio contiene la arquitectura de backend y visión artificial desarr
 
 ---
 
-## 🌐 Integración con Frontend
+##  Integración con Frontend
 
 El servidor expone dos puntos de contacto principales para la interfaz web (Single Page Application - SPA):
 - **Streaming de Video HTTP (`/video_feed`):** Transmite los fotogramas procesados con los recuadros de detección de rostro.
@@ -26,7 +26,7 @@ El servidor expone dos puntos de contacto principales para la interfaz web (Sing
 
 ---
 
-## 🛠️ Requisitos e Instalación
+##  Requisitos e Instalación
 
 ### Requisitos previos
 - Python 3.8 o superior instalado.
